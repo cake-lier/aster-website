@@ -1,0 +1,53 @@
+branches:
+  - main
+plugins:
+  - - "@semantic-release/commit-analyzer"
+    - preset: conventionalcommits
+  - "@semantic-release/release-notes-generator"
+  - "@semantic-release/changelog"
+  - - "semantic-release-replace-plugin"
+    - replacements:
+        - files:
+            - package.json
+          from: '\"version\": \".*\"'
+          to: '"version": "${nextRelease.version}"'
+          results:
+            - file: package.json
+              hasChanged: true
+              numMatches: 1
+              numReplacements: 1
+          countMatches: true
+        - files:
+            - package-lock.json
+          from: "\"name\": \"aster-website\",\n  \"version\": \".*\""
+          to: "\"name\": \"aster-website\",\n  \"version\": \"${nextRelease.version}\""
+          results:
+            - file: package-lock.json
+              hasChanged: true
+              numMatches: 1
+              numReplacements: 1
+          countMatches: true
+        - files:
+            - package-lock.json
+          from: "\"name\": \"aster-website\",\n      \"version\": \".*\""
+          to: "\"name\": \"aster-website\",\n      \"version\": \"${nextRelease.version}\""
+          results:
+            - file: package-lock.json
+              hasChanged: true
+              numMatches: 1
+              numReplacements: 1
+          countMatches: true
+  - - "@semantic-release/exec"
+    - publishCmd: |
+        npm run build || exit 1;
+      shell: /bin/bash
+  - - "@semantic-release/git"
+    - assets:
+        - README.md
+        - CHANGELOG.md
+        - package.json
+        - package-lock.json
+  - - "@semantic-release/github"
+    - assets:
+        - path: "dist-zip/dist.zip"
+          label: Distribution folder

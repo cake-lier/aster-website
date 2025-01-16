@@ -1,0 +1,37 @@
+name: Test
+
+on:
+  push:
+    branches-ignore:
+      - main
+      - renovate/configure
+    paths-ignore:
+      - CHANGELOG.md
+      - README.md
+      - CONTRIBUTING.md
+      - renovate.json
+      - ".github/workflows/**"
+      - .releaserc.yml
+  workflow_call:
+
+jobs:
+  test:
+    name: Build and test
+    runs-on: ubuntu-24.04
+    env:
+      TERM: dumb
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup node environment
+        uses: actions/setup-node@v4
+        with:
+          node-version: "lts/*"
+      - name: Install dependencies
+        run: npm ci
+      - name: Build
+        run: npx tsc -b
+      - name: Lint with eslint
+        run: npm run lint
+      - name: Reformat with prettier
+        run: npm run format

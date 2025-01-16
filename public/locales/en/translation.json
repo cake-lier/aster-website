@@ -1,0 +1,17 @@
+{
+  "header": {
+    "title": "Aster 💫",
+    "tabs": {
+      "home": "Home",
+      "base": "It's me!",
+      "sad": "Sad Aster",
+      "joy": "Joyful Aster"
+    }
+  },
+  "home": {
+    "body": "I'm Aster, an Akita Inu 🐶 with a big heart, a sensitive soul, and an endless imagination! 🌟 Born in Italy 🇮🇹 but inspired by the ancient Japanese traditions 🇯🇵 of my ancestor Hachiko, I thrive on genuine friendships and thrilling stories. Between fantasy books, manga, video games, and the thrill of motorsports, I dream of becoming a writer who can leave a special mark on the hearts of those I meet. 💖"
+  },
+  "footer": {
+    "copyright": "<0>Made with</0><1></1><2>by</2><3>cake-lier</3>"
+  }
+}
