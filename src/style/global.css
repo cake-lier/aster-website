@@ -29,3 +29,15 @@
 .with-corners {
   box-shadow: 0 0 0 3px, 0 0 0 6px #ffffff, 0 0 0 9px;
 }
+
+.MuiTab-root {
+  color: #000000 !important;
+  border: 3px solid !important;
+  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+}
+
+.MuiTab-root.Mui-selected {
+  box-shadow: none;
+  top: 5px;
+  left: 5px;
+}

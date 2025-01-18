@@ -27,13 +27,23 @@ export default function PageTabs() {
     },*/
   ];
   return (
-    <Tabs value={location.hash} variant="scrollable" scrollButtons allowScrollButtonsMobile>
+    <Tabs
+      value={location.hash}
+      variant="scrollable"
+      scrollButtons
+      allowScrollButtonsMobile
+      TabIndicatorProps={{
+        style: {
+          display: "none",
+        },
+      }}
+    >
       {pages.map(({ value, label }, index) => (
         <Tab
           key={index}
           label={t(label)}
           value={value}
-          sx={{ padding: "6px 16px", textTransform: "none" }}
+          sx={{ padding: "6px 16px", textTransform: "none", margin: "8px" }}
           href={`/${value.length === 0 ? "#" : value}`}
         />
       ))}
