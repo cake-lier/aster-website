@@ -3,7 +3,7 @@ import Title from "../components/Title";
 import Links from "../components/Links";
 import PageTabs from "../components/PageTabs";
 import Gallery from "../components/Gallery";
-import "./Home.css";
+import "../style/global.css";
 import Footer from "../components/Footer";
 import { useTranslation } from "react-i18next";
 

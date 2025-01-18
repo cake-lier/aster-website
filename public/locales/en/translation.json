@@ -11,6 +11,14 @@
   "home": {
     "body": "I'm Aster, an Akita Inu 🐶 with a big heart, a sensitive soul, and an endless imagination! 🌟 Born in Italy 🇮🇹 but inspired by the ancient Japanese traditions 🇯🇵 of my ancestor Hachiko, I thrive on genuine friendships and thrilling stories. Between fantasy books, manga, video games, and the thrill of motorsports, I dream of becoming a writer who can leave a special mark on the hearts of those I meet. 💖"
   },
+  "about": {
+    "body": {
+      "firstParagraph": "Hello everyone! My name is Aster 💫 and I'm an Akita Inu. My ancestors come from an ancient region in northern Japan, but I was born in Italy. 🇮🇹 I've always been an emotional, shy, and quiet type, and sometimes I can be a bit wary of people I don't know. However, just a few kind words are enough to make me feel at ease! Like all dogs, I love being around others and I can't stand being alone for too long. My friends are what truly enrich my life, and I always try to spend as much time with them as possible.",
+      "secondParagraph": "For me, friendship is a lifelong promise, no matter how far away others may be or how long I have to wait to see them again. After all, this is the same philosophy that guided my glorious ancestor Hachiko, an endless source of inspiration for me and all members of my breed!",
+      "thirdParagraph": "My boundless imagination is both one of my greatest strengths and my Achilles' heel—on one hand, I express it through writing and drawing, but on the other, it often leaves me with my head in the clouds. 🤣 I love reading (both manga and novels, especially fantasy and mysteries) and playing video games. I'm also a huge fan of cars and motorsports in general. Oh, and I absolutely love eating, especially sweets!",
+      "fourthParagraph": "My dream is to become a writer, but the greatest satisfaction I could ever have would be knowing I've left an unforgettable mark on the hearts of the people I care about. ❤️"
+    }
+  },
   "footer": {
     "copyright": "<0>Made with</0><1></1><2>by</2><3>cake-lier</3>"
   }
