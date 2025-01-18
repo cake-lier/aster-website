@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/cake-lier/aster-website/compare/v1.0.1...v1.0.2) (2025-01-18)
+
+
+### Bug Fixes
+
+* fix about page for English version, subdivide into paragraphs ([962cc44](https://github.com/cake-lier/aster-website/commit/962cc441c5cf4e0158ccec6ae19cabeb43219656))
+
 ## [1.0.1](https://github.com/cake-lier/aster-website/compare/v1.0.0...v1.0.1) (2025-01-18)
 
 
