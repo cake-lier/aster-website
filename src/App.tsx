@@ -1,7 +1,8 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { HashRouter, Route, Routes } from "react-router-dom";
 import Home from "./views/Home";
 import { createTheme, CssBaseline, ThemeProvider } from "@mui/material";
 import PokemonGB from "./resources/PokemonGb.ttf";
+import About from "./views/About";
 
 const theme = createTheme({
   palette: {
@@ -36,11 +37,12 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
-      <BrowserRouter>
+      <HashRouter>
         <Routes>
           <Route index element={<Home />} />
+          <Route path="bio" element={<About />} />
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
     </ThemeProvider>
   );
 }
