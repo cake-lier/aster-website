@@ -1,3 +1,10 @@
+## [1.0.3](https://github.com/cake-lier/aster-website/compare/v1.0.2...v1.0.3) (2025-01-18)
+
+
+### Bug Fixes
+
+* change style to upper tabs ([8bd9a93](https://github.com/cake-lier/aster-website/commit/8bd9a933572e327c14a352a34002b8755283b263))
+
 ## [1.0.2](https://github.com/cake-lier/aster-website/compare/v1.0.1...v1.0.2) (2025-01-18)
 
 
